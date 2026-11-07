@@ -4,7 +4,9 @@ Sites web de l'Ensemble Copper & Wood : copperandwood.com, www.copperandwood.com
 
 ## Ce que fait ce dépôt aujourd'hui
 
-Le fichier `.htaccess` redirige les quatre adresses vers la billetterie HelloAsso du concert. C'est le lien imprimé sur l'affiche.
+Le fichier `.htaccess` redirige toutes les adresses des quatre domaines vers la billetterie HelloAsso du concert. C'est le lien imprimé sur l'affiche.
+
+La redirection est temporaire (302) : les navigateurs ne la gardent pas en cache, ce qui permet de changer la cible à chaque concert. Le chemin demandé n'est pas ajouté : copperandwood.com/n-importe-quoi mène aussi à la billetterie.
 
 La racine du dépôt est la racine web : le jour où l'association aura un vrai site de présentation, ses fichiers viendront ici.
 
