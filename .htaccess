@@ -4,5 +4,4 @@
 # QSD : le chemin et les paramètres demandés ne sont pas ajoutés à l'adresse HelloAsso.
 RewriteEngine On
 RewriteRule ^confidentialite/?$ /confidentialite.html [L]
-RewriteCond %{REQUEST_URI} !^/confidentialite\.html$
-RewriteRule ^ https://www.helloasso.com/associations/ensemble-copper-wood/evenements/copper-and-wood-big-band-en-concert [R=302,L,QSD]
+RewriteRule !^confidentialite\.html$ https://www.helloasso.com/associations/ensemble-copper-wood/evenements/copper-and-wood-big-band-en-concert [R=302,L,QSD]
