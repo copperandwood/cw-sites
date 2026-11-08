@@ -16,6 +16,8 @@ La racine du dépôt est la racine web : le jour où l'association aura un vrai 
 
 Le dépôt est relié aux hébergements OVH de l'association par l'intégration Git d'OVH (onglet « Mes sites » de l'hébergement, « Associer Git »). Un webhook GitHub prévient OVH à chaque mise à jour de `main`, qui est alors déployée automatiquement.
 
+Si un déploiement ne part pas, lire les livraisons du webhook (Settings > Webhooks > Recent deliveries). Le 8 novembre 2026, OVH a répondu « 401 Unauthorized » aux pushes qui ajoutaient un fichier, et accepté ceux qui ne faisaient que modifier des fichiers existants. Une fusion qui modifie seulement un fichier existant fait alors repartir le déploiement de tout le dépôt.
+
 ## Changer la cible de la redirection
 
 1. Modifier l'URL dans `.htaccess` sur une branche et ouvrir une pull request.
